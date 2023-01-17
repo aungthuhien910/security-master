@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <body>
-$END$
+<div th:fragment="accountList" class="row">
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">John</h4>
+                <p class="card-subtitle text-muted">SUPERADMIN</p>
+                <p class="lead">Username: john</p>
+                <p class="lead">Password: 12345</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">Emma</h4>
+                <p class="card-subtitle text-muted">EMPLOYEES ADMIN</p>
+                <p class="lead">Username: emma</p>
+                <p class="lead">Password: 12345</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">William</h4>
+                <p class="card-subtitle text-muted">DEPARTMENTS_CREATE,DEPARTMENTS_READ,DEPARTMENTS_PAG_VIEW</p>
+                <p class="lead">Username: william</p>
+                <p class="lead">Password: 12345</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">Lucas</h4>
+                <p class="card-subtitle text-muted">CUSTOMERS_READ,CUSTOMERS_PAG_VIEW</p>
+                <p class="lead">Username: lucas</p>
+                <p class="lead">Password: 12345</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">Tom</h4>
+                <p class="card-subtitle text-muted">No Roles</p>
+                <p class="lead">Username: tom</p>
+                <p class="lead">Password: 12345</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
