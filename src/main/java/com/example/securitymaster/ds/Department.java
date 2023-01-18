@@ -21,15 +21,15 @@ public class Department {
 
     @NotBlank(message = "code cannot be blank.")
     @Size(min = 2,max = 5,message = "code must be between 2 and 5")
-    @Pattern(regexp = "[A-Za-z]*",message = "code cannot contains illegal characters.")
+    @Pattern(regexp = "[A-Za-z ]*",message = "code cannot contains illegal characters.")
     private String code;
 
     @NotBlank(message = "Name cannot be empty.")
-    @Pattern(regexp = "[A-Za-z]*",message = "Name cannot contain illegal characters.")
+    @Pattern(regexp = "[A-Za-z ]*",message = "Name cannot contain illegal characters.")
     private String name;
 
     @NotBlank(message = "Country cannot be empty.")
-    @Pattern(regexp = "[A-Za-z]*",message = "Country cannot contain illegal characters.")
+    @Pattern(regexp = "[A-Za-z ]*",message = "Country cannot contain illegal characters.")
     private String country;
 
     public Department() {
