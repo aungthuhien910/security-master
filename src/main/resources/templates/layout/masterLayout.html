@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark text-light mb-5">
-    <a href="#" class="navbar-brand">SpringSecurity</a>
+    <a th:href="@{/}" class="navbar-brand">SpringSecurity</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,10 +22,10 @@
                 <a th:href="@{/customer/customers}" class="nav-link">Customers</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Employee</a>
+                <a th:href="@{/employee/employees}" class="nav-link">Employee</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Departments</a>
+                <a th:href="@{/department/departments}" class="nav-link">Departments</a>
             </li>
         </ul>
         <div sec:authorize="!isAuthenticated()">

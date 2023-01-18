@@ -68,6 +68,8 @@ public class WebSecurityConfig {
                 .requestMatchers("/", "/home", "/bootstrap/**")
                 .permitAll()
                 .requestMatchers("/customer/**").hasRole(CUSTOMERS_PAG_VIEW)
+                .requestMatchers("/employee/**").hasRole(EMPLOYEES_ADMIN)
+                .requestMatchers("/department/departments","/department/depart-form").hasAnyRole(DEPARTMENTS_PAG_VIEW,DEPARTMENTS_READ,DEPARTMENTS_CREATE)
                 .anyRequest()
                 .authenticated()
                 .and()

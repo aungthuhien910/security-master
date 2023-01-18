@@ -43,9 +43,10 @@ public class CustomerController {
     public String saveCustomer(@Valid Customer customer, BindingResult result) {
         if (result.hasErrors()) {
             return "customer-form";
+        }else {
+            customerDao.save(customer);
+            return "redirect:/customer/customers";
         }
-        customerDao.save(customer);
-        return "redirect:/customer/customers";
     }
 
     @CustomersDelete
